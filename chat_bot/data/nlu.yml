@@ -1,0 +1,39 @@
+version: "3.1"
+
+nlu:
+  - intent: greet
+    examples: |
+      - hello
+      - hi
+      - hey
+
+  - intent: goodbye
+    examples: |
+      - bye
+      - goodbye
+
+  - intent: request_product
+    examples: |
+      - I need a [something](product_name) for [dry skin](product_spec)
+      - I am looking for a [moisturizer](product_type)
+      - Can you recommend a [lotion](product_type) for [sensitive skin](product_spec)?
+      - I need a [laptop](product_type) with [16GB RAM](product_spec)
+      - Can you suggest a [smartphone](product_type) with a good [camera](product_spec)?
+      - I want a [TV](product_type) with [4K resolution](product_spec)
+      - Do you have a [fridge](product_type) with a [water dispenser](product_spec)?
+      - I'm looking for a [washing machine](product_type) with a [large capacity](product_spec)
+      - I need a [toy](product_type)
+      - I am looking for a [car](product_type)
+      - Recommend me a [bag](product_type)
+      - [bag](product_name)
+
+
+
+#- I need a [something](product_name) for [dry skin](product_spec)
+#- I am looking for a [moisturizer](product_type)
+#- Can you recommend a [lotion](product_type) for [sensitive skin](product_spec)?
+#- I need a [laptop](product_type) with [16GB RAM](product_spec)
+#- Can you suggest a [smartphone](product_type) with a good [camera](product_spec)?
+#- I want a [TV](product_type) with [4K resolution](product_spec)
+#- Do you have a [fridge](product_type) with a [water dispenser](product_spec)?
+#- I'm looking for a [washing machine](product_type) with a [large capacity](product_spec)

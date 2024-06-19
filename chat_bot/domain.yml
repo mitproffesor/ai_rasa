@@ -1,0 +1,50 @@
+version: "3.1"
+
+
+intents:
+  - greet
+  - request_product
+  - goodbye
+
+
+entities:
+  - product_name
+  - product_spec
+  - product_type
+
+slots:
+  product_type:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: product_type
+
+  product_spec:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: product_spec
+
+  product_name:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: product_name
+
+responses:
+  utter_greet:
+    - text: "Hello! what product are you looking for?"
+
+  utter_goodbye:
+    - text: "Goodbye! Have a great day!"
+
+  utter_ask_product:
+    - text: "Please specify the product you are looking for."
+
+
+actions:
+  - action_show_products
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

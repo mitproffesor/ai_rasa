@@ -1,0 +1,23 @@
+version: "3.1"
+
+rules:
+
+- rule: Say goodbye anytime the user says goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- rule: Greet anytime the user says hi
+  steps:
+  - intent: greet
+  - action: utter_greet
+
+- rule: suggest the products when user requests
+  steps:
+  - intent: request_product
+  - action: action_show_products
+  #  - action_request_product
+  #  - action_ask_product_details
+
+
+
